@@ -1,0 +1,5 @@
+/*
+LibFoo library
+*/
+
+void foo();
