@@ -1,5 +1,5 @@
 ## Compile LibFoo and Create Object File
-`gcc -c -o lib/libfoo.o src/libfoo.c`
+`gcc -c -o libfoo.o src/libfoo.c`
 
 ## Compile Test and Link LibFoo Object
-`gcc src/test.c -o test lib/libfoo.o`
+`gcc src/test.c -o test libfoo.o`
