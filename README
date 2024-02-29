@@ -3,3 +3,6 @@
 
 ## Compile Test and Link LibFoo Object
 `gcc src/test.c -o test libfoo.o`
+
+## Execute Application
+`./test`
