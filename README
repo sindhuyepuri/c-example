@@ -1,5 +1,11 @@
-## Compile LibFoo and Create Object File
-`gcc -c -o lib/libfoo.o src/libfoo.c`
+## Compile Foo and Create Library Object File
+`gcc -c -fPIC lib/foo.c -o lib/foo.o`
+
+## Create Dynamic Library
+`gcc -shared -o lib/libfoo.dylib lib/foo.o`
 
 ## Compile Test and Link LibFoo Object
-`gcc src/test.c -o test lib/libfoo.o`
+`gcc -o test src/test.c -Iinclude -Llib -lfoo`
+
+## Run executable
+`./test`

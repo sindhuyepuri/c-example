@@ -1,5 +1,5 @@
 /*
-LibFoo library
+Foo library
 */
 
 void foo();
